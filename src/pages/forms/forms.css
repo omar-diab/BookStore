@@ -1,0 +1,74 @@
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    margin-bottom: 45px;
+}
+
+.form-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: teal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    position: relative;
+}
+
+.form-input {
+    border: 2px solid teal;
+    padding: 10px;
+    font-style: 20px;
+    margin-bottom: 15px;
+}
+
+.form-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.form-btn:hover {
+    background-color: darkblue;
+}
+
+.form-footer {
+    font-size: 16px;
+    color: #777;
+}
+
+.form-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-left: 5px;
+}
+
+.form-link:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.show-password-icon {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    cursor: pointer;
+    font-size: 21px;
+    color: rgba(0, 128, 128, 0.87);
+    z-index: 2;
+}

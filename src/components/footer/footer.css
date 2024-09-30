@@ -1,0 +1,225 @@
+.footer {
+    padding: 10px 30px;
+    background-color: snow;
+}
+
+/* Footer Social Media */
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-social-media-text {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-social-media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-media-icon {
+    font-size: 30px;
+    margin: 0 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-media-icon:first-of-type {
+    background-color: #e1306c;
+    color: white;
+}
+
+.footer-social-media-icon:hover {
+    background-color: white;
+    color: #e1306c;
+}
+
+.footer-social-media-icon:nth-of-type(2) {
+    background-color: #3b5998;
+    color: white;
+}
+
+.footer-social-media-icon:nth-of-type(2):hover {
+    background-color: white;
+    color: #3b5998;
+}
+
+.footer-social-media-icon:nth-of-type(3) {
+    background-color: #14171a;
+    color: white;
+}
+
+.footer-social-media-icon:nth-of-type(3):hover {
+    background-color: white;
+    color: #14171a;
+}
+
+.footer-social-media-icon:nth-of-type(4) {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.footer-social-media-icon:nth-of-type(4):hover {
+    background-color: white;
+    color: #dd4b39;
+}
+
+.footer-social-media-icon:last-of-type {
+    background-color: #0077b5;
+    color: white;
+}
+
+.footer-social-media-icon:last-of-type:hover {
+    background-color: white;
+    color: #0077b5;
+}
+
+/* Footer Links Wrapper */
+.footer-links-wrapper {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-links-item {
+    width: 30%;
+}
+
+.footer-links-item-title {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 700;
+    width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer-link {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #777;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #0077b5;
+    font-weight: bold;
+}
+
+.footer-address-wrapper {
+    margin-top: 20px;
+}
+
+.footer-address-item {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #777;
+}
+
+.footer-address-item i {
+    color: #0077b5;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.footer-description {
+    font-size: 17px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.footer-copyright {
+    border-top: 1px solid var(--primary-color);
+    padding: 20px 0;
+    font-size: 16px;
+    color: #777;
+    margin-top: 30px;
+}
+
+.footer-copyright span {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* Media Queries */
+@media (max-width: 970px) {
+    .footer-links-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-links-item {
+        width: 40%;
+        margin: 15px 0;
+    }
+
+    .footer-links-item:last-of-type {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer-social-media {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .footer-social-media-text {
+        margin-bottom: 20px;
+    }
+
+    .footer-social-media-icon {
+        font-size: 24px;
+        margin: 0 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-links-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-links-item {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .footer-links-item:last-of-type {
+        width: 110%;
+    }
+    
+    .footer-copyright {
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+    
+    .footer-copyright span {
+        font-size: 16px;
+    }
+}
